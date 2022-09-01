@@ -7,18 +7,18 @@
 
 <body>
     <h2>Update Student</h2>
-    <form action="/student/{{ stud[" student_id"] }}/update" method="POST" id="update-form">
+    <form action="/student/{{ stud["student_id"] }}/update" method="POST" id="update-form">
         <div>
             <label>Roll Number:</label>
-            <input type="text" name="roll" value="{{ stud[" roll_number"] }}" disabled />
+            <input type="text" name="roll" value="{{ stud["roll_number"] }}" disabled />
         </div>
         <div>
             <label>First Name:</label>
-            <input type="text" name="f_name" value="{{ stud[" first_name"] }}" required />
+            <input type="text" name="f_name" value="{{ stud["first_name"] }}" required />
         </div>
         <div>
             <label>Last Name:</label>
-            <input type="text" name="l_name" value="{{ stud[" last_name"] }}" />
+            <input type="text" name="l_name" value="{{ stud["last_name"] }}" />
         </div>
         <div>
             <label>Select Courses: </label>
