@@ -1,3 +1,8 @@
+import os 
+
+os.system('python application/create_database.py')
+os.system('python application/insert_database.py')
+
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
